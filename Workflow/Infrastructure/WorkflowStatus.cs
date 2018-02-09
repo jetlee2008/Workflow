@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Workflow.Infrastructure
 {
-    class WorkflowStatus
+    public enum WorkflowStatus
     {
+        Init,
+        Start,
+        InProgress,
+        End
     }
 }
