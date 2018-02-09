@@ -40,12 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\BaseWorkflowContext.cs" />
     <Compile Include="Infrastructure\IWorkflowDataProvider.cs" />
     <Compile Include="Infrastructure\WorkflowNodeStatus.cs" />
     <Compile Include="Infrastructure\WorkflowStatus.cs" />
     <Compile Include="Workflow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WorkflowNode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="StringWorkflowDataProvider\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
